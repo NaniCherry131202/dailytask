@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+  <h2>DAILY TASK JavaScript</h2>
+  
+</body>
+<script>
+    //Using for-loop Multiplication table of 5
+    let number = 5;
+    for (let z = 1; z <= 10; z++) {
+        let result = number * z
+        console.log(number + 'x' + z + '=' + result)
+    }
+    console.log('==================')
+    //Sum of even numbers
+
+    let sumOfEvens = 0;
+    for (let number = 2; number <= 50; number += 2) {
+        sumOfEvens += number;
+    }
+    
+    console.log("The sum of all even numbers between 1 and 50 is: " + sumOfEvens);
+    
+    console.log('==================')
+     //Sum of odd numbers
+     let sum1 = 0
+        for (k = 1; k <= 20; k++) {
+            if (k % 2 !== 0) {
+                sum1 += k;
+            }
+        }
+        console.log('Sum of odd numbers between 1 to 50 is :', sum1)
+
+        console.log('==================')
+
+
+        //Factorial Calculation
+        let x = 10, m = 1, fact = 1
+        while (m <= x) {
+            fact = fact * m
+            m++
+        }
+        console.log('Factorial calculation of 6 is :', fact)
+
+        console.log('==================')
+
+        // Prime Numbers
+        console.log('Prime Numbers')
+        let n = 2;
+        while (n <= 15) {
+            let guess = true;
+            for (let i = 2; i <= Math.sqrt(n); i++) {
+                if (n % i == 0) {
+                    guess = false;
+                    break;
+                }
+            }
+            if (guess) {
+                console.log(n);
+            }
+            n++;
+        }
+
+
+</script>
+
+</html>
